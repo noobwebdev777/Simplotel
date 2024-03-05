@@ -1,67 +1,94 @@
-*{
-    padding: 0;
-    margin: 0;
-    /* border: 1px solid black; */
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid black; */
 }
 
-ul{
-    display: flex;
-    justify-content: space-around;
-    background-color: #ff7171;
-    padding: 10px;
-    list-style: none;
-    font-weight: bold;
+ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ff7171;
+  padding: 10px;
+  list-style: none;
+  font-weight: bold;
 }
 
-.main{
-    height: 100vh;
-    background-image: linear-gradient(to right, #fff4b0 0%,#ffbfe4 100%);
+.main {
+  height: 100vh;
+  background-image: linear-gradient(to right, #fff4b0 0%, #ffbfe4 100%);
 }
 
-.name{
-    padding: 30px;
+.name {
+  padding: 30px;
 }
 
 .name > * {
-    margin: 10px;
-    padding-bottom: 10px;
+  margin: 10px;
+  padding-bottom: 10px;
 }
 
-.butt{
-    padding: 8px 50px;
-    color: white;
-    background-color: #ff7171;
-    border: 0;
+.butt {
+  padding: 8px 50px;
+  color: white;
+  background-color: #ff7171;
+  border: 0;
 }
 
-.sub{
-    height: 100vh;
-    background-image: linear-gradient(to right, #fff4b0 0%,#ffbfe4 100%);
+.sub {
+  height: 100vh;
+  background-image: linear-gradient(to right, #fff4b0 0%, #ffbfe4 100%);
 }
 
+.me {
+  display: flex;
+  flex-direction: row;
+}
 
-.me{
+.img {
+  background-image: url("./img/pexels-robin-stickel-70497.jpg");
+}
+
+.click {
+  display: flex;
+}
+
+.click > p {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.imgrid{
+    display: grid;
+    
+}
+
+.call {
+  font-family: roboto;
+  letter-spacing: 1.4px;
+  padding: 20px;
+  background-color: #ff7171;
+  max-width: 270px;
+}
+
+.call > * {
+  margin-bottom: 10px;
+}
+
+/* .sub{
     display: flex;
-    flex-direction: row;
-}
-
-.img{
-    background-image: url('./img/pexels-robin-stickel-70497.jpg');
-}
-
-
+    flex-direction: ;
+} */
 
 /* screen size 768px */
 @media screen and (max-width: 768px) {
-    .me{
-        flex-direction: row;
-    }
+  .me {
+    flex-direction: row;
   }
+}
 
 /* screen size 480px */
-@media screen and (max-width : 480px) {
-    .me{
-        flex-direction: column;
-    }
-    
+@media screen and (max-width: 480px) {
+  .me {
+    flex-direction: column;
+  }
 }
