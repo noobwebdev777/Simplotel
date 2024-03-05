@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid black; */
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff7171;
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.main{
+    height: 100vh;
+    background-image: linear-gradient(to right, #fff4b0 0%,#ffbfe4 100%);
+}
+
+.name{
+    padding: 30px;
+}
+
+.name > * {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.butt{
+    padding: 8px 50px;
+    color: white;
+    background-color: #ff7171;
+    border: 0;
+}
+
+.sub{
+    height: 100vh;
+    background-image: linear-gradient(to right, #fff4b0 0%,#ffbfe4 100%);
+}
+
+
+.me{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    background-image: url('./img/pexels-robin-stickel-70497.jpg');
+}
+
+
+
+/* screen size 768px */
+@media screen and (max-width: 768px) {
+    .me{
+        flex-direction: row;
+    }
+  }
+
+/* screen size 480px */
+@media screen and (max-width : 480px) {
+    .me{
+        flex-direction: column;
+    }
+    
+}
